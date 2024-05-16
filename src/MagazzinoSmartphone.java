@@ -21,8 +21,8 @@ public class MagazzinoSmartphone {
         
     }
     public void removeSmartphone(Smartphone smartphone) {
+        /*
         int pos=count;
-        boolean test=true;
         if(pos!=-1){
             smartphones[pos]=null; //opzionale
             for (int i = pos; i < count; i++) {
@@ -30,6 +30,7 @@ public class MagazzinoSmartphone {
             }
             smartphones[--count]=null;
         }
+        */
     }
 
     public Smartphone[] getSmartphonesArray() {
