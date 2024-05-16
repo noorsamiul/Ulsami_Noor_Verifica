@@ -20,14 +20,16 @@ public class MagazzinoSmartphone {
 
         
     }
-
     public void removeSmartphone(Smartphone smartphone) {
-        int pos=0;
+        int pos=count;
         boolean test=true;
-        for(int i=0; i<smartphones.length;i--) { 
-            
+        if(pos!=-1){
+            smartphones[pos]=null; //opzionale
+            for (int i = pos; i < count; i++) {
+                smartphones[i]= smartphones[i+1];
+            }
+            smartphones[--count]=null;
         }
-        
     }
 
     public Smartphone[] getSmartphonesArray() {
